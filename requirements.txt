@@ -16,4 +16,6 @@ tokenizers==0.19.1 --index-url https://pypi.org/simple
 torch==2.5.0
 
 numpy==1.26.4  # Required for OpenCV and CLIP processing
+gunicorn==23.0.0
+
 
