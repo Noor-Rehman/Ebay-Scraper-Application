@@ -1973,7 +1973,7 @@ def cleanup_old_jobs():
 
 # ----------------------- Main Application -----------------------
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print("🚀 Starting Optimized eBay Image Scraper...")
     print(f"📁 Downloads Directory: {DOWNLOADS_DIR}")
     print(f"🔧 BackgroundRemover Available: {REMBG_AVAILABLE}")
@@ -1981,6 +1981,8 @@ if __name__ == '__main__':
     # Start cleanup thread
     threading.Thread(target=cleanup_old_jobs, daemon=True).start()
     
-    # Run Flask app
-    app.run(debug=True, host='0.0.0.0', port=8050)
+    # For local development only (optional)
+    port = int(os.environ.get("PORT", 10000))  # Default to 10000 for Render compatibility
+    app.run(host="0.0.0.0", port=port, debug=False)
+
 
