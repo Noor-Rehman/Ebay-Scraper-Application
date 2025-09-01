@@ -1,21 +1,14 @@
-# Core dependencies
 Flask==3.0.3
 requests==2.32.3
 beautifulsoup4==4.12.3
 Pillow==10.4.0
 urllib3==2.2.3
-
-# Optional dependencies for background removal
-backgroundremover==0.2.2  # Optional, for background removal if installed
-opencv-python==4.10.0.84  # Optional, for enhanced background removal
-
-# Optional dependencies for AI features
-openai==1.47.0  # Optional, for scene suggestion feature
+backgroundremover==0.2.2
+opencv-python==4.10.0.84
+openai==1.47.0
 transformers==4.44.2
 tokenizers==0.19.1 --index-url https://pypi.org/simple
-torch==2.5.0
-
-numpy==1.26.4  # Required for OpenCV and CLIP processing
+torch==2.5.0 --index-url https://download.pytorch.org/whl/cpu
+torchvision==0.20.0 --index-url https://download.pytorch.org/whl/cpu
+numpy==1.26.4
 gunicorn==23.0.0
-
-
