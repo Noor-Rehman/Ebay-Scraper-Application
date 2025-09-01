@@ -1,0 +1,16 @@
+# Core dependencies
+Flask==3.0.3
+requests==2.32.3
+beautifulsoup4==4.12.3
+Pillow==10.4.0
+urllib3==2.2.3
+
+# Optional dependencies for background removal
+backgroundremover==0.2.2  # Optional, for background removal if installed
+opencv-python==4.10.0.84  # Optional, for enhanced background removal
+
+# Optional dependencies for AI features
+openai==1.47.0  # Optional, for scene suggestion feature
+transformers==4.44.2  # Optional, for CLIP model
+torch==2.4.1  # Optional, for CLIP model
+numpy==1.26.4  # Required for OpenCV and CLIP processing
