@@ -11,7 +11,9 @@ opencv-python==4.10.0.84  # Optional, for enhanced background removal
 
 # Optional dependencies for AI features
 openai==1.47.0  # Optional, for scene suggestion feature
-transformers==4.44.2  # Optional, for CLIP model
+transformers==4.44.2
+tokenizers==0.19.1 --index-url https://pypi.org/simple
 torch==2.5.0
 
 numpy==1.26.4  # Required for OpenCV and CLIP processing
+
