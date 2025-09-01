@@ -1982,9 +1982,10 @@ if __name__ == '__main__':
     threading.Thread(target=cleanup_old_jobs, daemon=True).start()
     
     # Run Flask app
-    app.run(
+    app.run_server(
         debug=False,
         host='0.0.0.0',
         port=5000,
         threaded=True
+
     )
