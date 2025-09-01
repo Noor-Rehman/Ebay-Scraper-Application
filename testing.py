@@ -1975,8 +1975,12 @@ def cleanup_old_jobs():
 # ----------------------- Main Application -----------------------
 
 if __name__ == "__main__":
+    import os, threading
+    print("🚀 Starting Optimized eBay Image Scraper...")
     threading.Thread(target=cleanup_old_jobs, daemon=True).start()
-    app.run(debug=True, host='0.0.0.0', port=5000, threaded=True)
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port, debug=False)
+
 
 
 
